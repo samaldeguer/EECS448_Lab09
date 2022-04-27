@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="formChecker.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <form id="login">
@@ -11,9 +12,28 @@
       <input type="password" id="password" name="password"><br>
       <input type="submit" value="Login" onClick="checkLogin(); return false;">
     </form>
-    <form id="shop" style="display:none">
+    <form id="shop" style="display:none" onsubmit="return checkInput();" action="customerBackend.php" method="POST">
       <p>The Toe Friends IV Shoe™</p>
-      <img src="Shoe1.jpg">
+      <img src="https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7de81e49d3694beba77cdb1aabe3b7af.jpg"><br>
+      <label for="shoe1">Quantity: </label>
+      <input type="text" id="shoe1" name="shoe1"><br><br>
+      <p>Jandals™</p>
+      <img src="https://hindi.oneworldnews.com/wp-content/uploads/2019/06/12-2.jpg"><br>
+      <label for="shoe2">Quantity: </label>
+      <input type="text" id="shoe2" name="shoe2"><br><br>
+      <p>Straight Up Ugly Shoes III™</p>
+      <img src="https://pbs.twimg.com/media/Cf9h0_cVAAAeaZV?format=jpg&name=large"><br>
+      <label for="shoe3">Quantity: </label>
+      <input type="text" id="shoe3" name="shoe3"><br>
+      <p>Shipping:</p>
+      <input type="radio" id="free" name="free">
+      <label for="free">Free 7 day</label><br>
+      <input type="radio" id="overnight" name="overnight">
+      <label for="overnight">$50.00 over night</label><br>
+      <input type="radio" id="three" name="three">
+      <label for="three">$5.00 three day</label><br>
+      <button type="button" onClick="reset()">Reset</button><br>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
