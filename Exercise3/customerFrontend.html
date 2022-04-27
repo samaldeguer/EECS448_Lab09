@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="formChecker.js"></script>
+  </head>
+  <body>
+    <form id="login">
+      <label for="username">Username (email):</label>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+      <input type="submit" value="Login" onClick="checkLogin(); return false;">
+    </form>
+    <form id="shop" style="display:none">
+      <p>The Toe Friends IV Shoe™</p>
+      <img src="Shoe1.jpg">
+    </form>
+  </body>
+</html>
