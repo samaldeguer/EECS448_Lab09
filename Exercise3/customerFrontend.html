@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="style.css" rel="stylesheet"/>
     <script src="formChecker.js"></script>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <form id="login">
+      <h1>Samson's Shoe Shop</h1>
       <label for="username">Username (email):</label>
-      <input type="text" id="username" name="username"><br>
+      <input type="text" id="username" name="username"><br><br>
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br>
+      <input type="password" id="password" name="password"><br><br>
       <input type="submit" value="Login" onClick="checkLogin(); return false;">
     </form>
     <form id="shop" style="display:none" onsubmit="return checkInput();" action="customerBackend.php" method="POST">
@@ -26,11 +27,11 @@
       <label for="shoe3">Quantity: </label>
       <input type="text" id="shoe3" name="shoe3"><br>
       <p>Shipping:</p>
-      <input type="radio" id="free" name="free">
+      <input type="radio" id="free" value="Free 7 day" name="shipping">
       <label for="free">Free 7 day</label><br>
-      <input type="radio" id="overnight" name="overnight">
+      <input type="radio" id="overnight" value="$50.00 over night" name="shipping">
       <label for="overnight">$50.00 over night</label><br>
-      <input type="radio" id="three" name="three">
+      <input type="radio" id="three" value="$5.00 three day" name="shipping">
       <label for="three">$5.00 three day</label><br>
       <button type="button" onClick="reset()">Reset</button><br>
       <input type="submit" value="Submit">
