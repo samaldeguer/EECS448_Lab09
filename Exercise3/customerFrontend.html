@@ -5,36 +5,40 @@
     <script src="formChecker.js"></script>
   </head>
   <body>
-    <form id="login">
+    <form id="login" style="text-align: center">
       <h1>Samson's Shoe Shop</h1>
       <label for="username">Username (email):</label>
-      <input type="text" id="username" name="username"><br><br>
+      <input type="text" id="username" name="username" class="inputStyle"><br><br>
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br><br>
-      <input type="submit" value="Login" onClick="checkLogin(); return false;">
+      <input type="password" id="password" name="password" class="inputStyle"><br><br>
+      <input type="submit" value="Login" class="button" onClick="checkLogin(); return false;">
     </form>
-    <form id="shop" style="display:none" onsubmit="return checkInput();" action="customerBackend.php" method="POST">
-      <p>The Toe Friends IV Shoe™ $85</p>
-      <img src="https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7de81e49d3694beba77cdb1aabe3b7af.jpg"><br>
+    <form id="shop" style="display:none; text-align:center" onsubmit="return checkInput();" action="customerBackend.php" method="POST">
+      <h1>Samson's Shoe Shop</h1>
+      <h3>The Toe Friends IV Shoe™</h3>
+      <p>$85.00</p>
+      <img src="https://p1-tt.byteimg.com/origin/tos-cn-i-qvj2lq49k0/7de81e49d3694beba77cdb1aabe3b7af.jpg" class="zoom"><br>
       <label for="shoe1">Quantity: </label>
-      <input type="text" id="shoe1" name="shoe1"><br><br>
-      <p>Jandals™ $65</p>
-      <img src="https://hindi.oneworldnews.com/wp-content/uploads/2019/06/12-2.jpg"><br>
+      <input type="text" id="shoe1" name="shoe1" class="inputStyle"><br><br><br>
+      <h3>Jandals™</h3>
+      <p>$65.00</p>
+      <img src="https://hindi.oneworldnews.com/wp-content/uploads/2019/06/12-2.jpg" class="zoom"><br>
       <label for="shoe2">Quantity: </label>
-      <input type="text" id="shoe2" name="shoe2"><br><br>
-      <p>Straight Up Ugly Shoes III™ $120</p>
-      <img src="https://pbs.twimg.com/media/Cf9h0_cVAAAeaZV?format=jpg&name=large"><br>
+      <input type="text" id="shoe2" name="shoe2" class="inputStyle"><br><br><br>
+      <h3>Straight Up Ugly Shoes III™</h3>
+      <p>$120.00</p>
+      <img src="https://pbs.twimg.com/media/Cf9h0_cVAAAeaZV?format=jpg&name=large" class="zoom"><br>
       <label for="shoe3">Quantity: </label>
-      <input type="text" id="shoe3" name="shoe3"><br>
-      <p>Shipping:</p>
+      <input type="text" id="shoe3" name="shoe3" class="inputStyle"><br><br>
+      <h3>Shipping:</h3>
       <input type="radio" id="free" value="Free 7 day" name="shipping">
       <label for="free">Free 7 day</label><br>
       <input type="radio" id="overnight" value="$50.00 over night" name="shipping">
       <label for="overnight">$50.00 over night</label><br>
       <input type="radio" id="three" value="$5.00 three day" name="shipping">
       <label for="three">$5.00 three day</label><br>
-      <button type="button" onClick="reset()">Reset</button><br>
-      <input type="submit" value="Submit">
+      <button type="button" class="button" onClick="reset()">Reset</button>
+      <input type="submit" class="button" value="Submit">
     </form>
   </body>
 </html>

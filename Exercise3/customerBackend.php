@@ -11,9 +11,10 @@
   $shipping = $_POST["shipping"];
   $shippingCost = 0;
   echo "<link rel='stylesheet' href='style.css'>";
+  echo "<h1>Receipt</h1>";
   echo "<table>";
   echo "<tr>";
-  echo "<th>&nbsp;</th>";
+  echo "<td>&nbsp;</td>";
   echo "<td><strong>Quantity</strong></td>";
   echo "<td><strong>Cost Per Item</strong></td>";
   echo "<td><strong>Sub Total</strong></td>";

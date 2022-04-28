@@ -38,7 +38,7 @@ function checkInput()
 {
   if (document.getElementById("shoe1").value == "" || document.getElementById("shoe1").value < 0 || document.getElementById("shoe2").value == "" || document.getElementById("shoe2").value < 0 || document.getElementById("shoe3").value == "" || document.getElementById("shoe3").value < 0)
   {
-    alert("Enter a quantity for all items");
+    alert("Enter a nonnegative quantity for all items");
     return false;
   }
   else if (document.getElementById("free").checked == false && document.getElementById("overnight").checked == false && document.getElementById("three").checked == false)
